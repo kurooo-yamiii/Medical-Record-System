@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1DE648F-DBAA-420C-AD1D-934A10875DB7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Medical_Record_System.My.MyApplication</StartupObject>
+    <RootNamespace>Medical_Record_System</RootNamespace>
+    <AssemblyName>Medical Record System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Den\Desktop\Medical Record System\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Medical Record System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Medical Record System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0898287BBB720EF26CABA11E089E54CB1251244F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Medical Record System_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>E:\Files ni Pisti\Tutorial\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CHANPAS.Designer.vb">
+      <DependentUpon>CHANPAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CHANPAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class1.vb" />
+    <Compile Include="Class2.vb" />
+    <Compile Include="Class3.vb" />
+    <Compile Include="EMPLOYEE.Designer.vb">
+      <DependentUpon>EMPLOYEE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEEADD.Designer.vb">
+      <DependentUpon>EMPLOYEEADD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEEADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEEADD2.Designer.vb">
+      <DependentUpon>EMPLOYEEADD2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEEADD2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEEARCH.Designer.vb">
+      <DependentUpon>EMPLOYEEARCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEEARCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEESHOW.Designer.vb">
+      <DependentUpon>EMPLOYEESHOW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEESHOW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEEUP.Designer.vb">
+      <DependentUpon>EMPLOYEEUP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEEUP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEEUP2.Designer.vb">
+      <DependentUpon>EMPLOYEEUP2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEEUP2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENROLLMENT.Designer.vb">
+      <DependentUpon>ENROLLMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENROLLMENTADD.Designer.vb">
+      <DependentUpon>ENROLLMENTADD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENTADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENROLLMENTADD2.Designer.vb">
+      <DependentUpon>ENROLLMENTADD2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENTADD2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENROLLMENTARCH.Designer.vb">
+      <DependentUpon>ENROLLMENTARCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENTARCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENROLLMENTSHOW.Designer.vb">
+      <DependentUpon>ENROLLMENTSHOW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENTSHOW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENROLLMENTUP.Designer.vb">
+      <DependentUpon>ENROLLMENTUP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENTUP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENROLLMENTUP2.Designer.vb">
+      <DependentUpon>ENROLLMENTUP2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENTUP2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HISTORY.Designer.vb">
+      <DependentUpon>HISTORY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HISTORY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAMA.Designer.vb">
+      <DependentUpon>MAMA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAMA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICALADD2.Designer.vb">
+      <DependentUpon>MEDICALADD2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICALADD2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICALARCHIVE.Designer.vb">
+      <DependentUpon>MEDICALARCHIVE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICALARCHIVE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICALSHOW.Designer.vb">
+      <DependentUpon>MEDICALSHOW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICALSHOW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICALUP.Designer.vb">
+      <DependentUpon>MEDICALUP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICALUP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICINEARCHIVE.Designer.vb">
+      <DependentUpon>MEDICINEARCHIVE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICINEARCHIVE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.vb">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICAL.Designer.vb">
+      <DependentUpon>MEDICAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICALADD.Designer.vb">
+      <DependentUpon>MEDICALADD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICALADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICALUP2.Designer.vb">
+      <DependentUpon>MEDICALUP2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICALUP2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICINEADD.Designer.vb">
+      <DependentUpon>MEDICINEADD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICINEADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICINEE.Designer.vb">
+      <DependentUpon>MEDICINEE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICINEE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDICINEUP2.Designer.vb">
+      <DependentUpon>MEDICINEUP2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICINEUP2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TEACHER.Designer.vb">
+      <DependentUpon>TEACHER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TEACHER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TEACHER2.Designer.vb">
+      <DependentUpon>TEACHER2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TEACHER2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTION.Designer.vb">
+      <DependentUpon>TRANSACTION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TRANSACTION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTION2.Designer.vb">
+      <DependentUpon>TRANSACTION2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TRANSACTION2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CHANPAS.resx">
+      <DependentUpon>CHANPAS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEE.resx">
+      <DependentUpon>EMPLOYEE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEEADD.resx">
+      <DependentUpon>EMPLOYEEADD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEEADD2.resx">
+      <DependentUpon>EMPLOYEEADD2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEEARCH.resx">
+      <DependentUpon>EMPLOYEEARCH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEESHOW.resx">
+      <DependentUpon>EMPLOYEESHOW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEEUP.resx">
+      <DependentUpon>EMPLOYEEUP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEEUP2.resx">
+      <DependentUpon>EMPLOYEEUP2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENT.resx">
+      <DependentUpon>ENROLLMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENTADD.resx">
+      <DependentUpon>ENROLLMENTADD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENTADD2.resx">
+      <DependentUpon>ENROLLMENTADD2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENTARCH.resx">
+      <DependentUpon>ENROLLMENTARCH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENTSHOW.resx">
+      <DependentUpon>ENROLLMENTSHOW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENTUP.resx">
+      <DependentUpon>ENROLLMENTUP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENTUP2.resx">
+      <DependentUpon>ENROLLMENTUP2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISTORY.resx">
+      <DependentUpon>HISTORY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAMA.resx">
+      <DependentUpon>MAMA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICAL.resx">
+      <DependentUpon>MEDICAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICALADD.resx">
+      <DependentUpon>MEDICALADD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICALADD2.resx">
+      <DependentUpon>MEDICALADD2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICALARCHIVE.resx">
+      <DependentUpon>MEDICALARCHIVE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICALSHOW.resx">
+      <DependentUpon>MEDICALSHOW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICALUP.resx">
+      <DependentUpon>MEDICALUP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICALUP2.resx">
+      <DependentUpon>MEDICALUP2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICINEARCHIVE.resx">
+      <DependentUpon>MEDICINEARCHIVE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICINEADD.resx">
+      <DependentUpon>MEDICINEADD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICINEE.resx">
+      <DependentUpon>MEDICINEE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDICINEUP2.resx">
+      <DependentUpon>MEDICINEUP2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TEACHER.resx">
+      <DependentUpon>TEACHER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TEACHER2.resx">
+      <DependentUpon>TEACHER2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTION.resx">
+      <DependentUpon>TRANSACTION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTION2.resx">
+      <DependentUpon>TRANSACTION2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Medical Record System_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19366.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\member.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCAS_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\150021.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\196123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s0nmf6I0gzZF4kqkqUMI1BGzz0FdCf1EGx2oLvW4Zfz93YEIrnR_hEEdstKoBmaS0OJSuVlkXG62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-button-png-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1481458366_config-users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1481450883_old-edit-redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acu-blue-medical-record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
